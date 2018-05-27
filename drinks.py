@@ -1,61 +1,42 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Rum & Coke",
+		"name": "Blue & Red - 50ml",
 		"ingredients": {
-			"rum": 50,
-			"coke": 150
+			"blue": 50,
+			"coke": 50
 		}
 	}, {
-		"name": "Gin & Tonic",
+		"name": "Green & Yellow - 50ml",
 		"ingredients": {
-			"gin": 50,
-			"tonic": 150
+			"green": 50,
+			"yellow": 50
 		}
 	}, {
-		"name": "Long Island",
+		"name": "All - 50ml",
 		"ingredients": {
-			"gin": 15,
-			"rum": 15,
-			"vodka": 15,
-			"tequila": 15,
-			"coke": 100,
-			"oj": 30
+			"green": 50,
+			"yellow": 50,
+			"blue": 50,
+			"red": 50,
 		}
-	}, {
-		"name": "Screwdriver",
+	},
+	#test edge - no fluid at all
+	{
+		"name": "All - 0ml",
 		"ingredients": {
-			"vodka": 50,
-			"oj": 150
+			"green": 0,
+			"yellow": 0,
+			"blue": 0,
+			"red": 0,
 		}
-	}, {
-		"name": "Margarita",
-		"ingredients": {
-			"tequila": 50,
-			"mmix": 150
-		}
-	}, {
-		"name": "Gin & Juice",
-		"ingredients": {
-			"gin": 50,
-			"oj": 150
-		}
-	}, {
-		"name": "Tequila Sunrise",
-		"ingredients": {
-			"tequila": 50,
-			"oj": 150
-		}
-	}
+	},
+	
 ]
 
 drink_options = [
-	{"name": "Gin", "value": "gin"},
-	{"name": "Rum", "value": "rum"},
-	{"name": "Vodka", "value": "vodka"},
-	{"name": "Tequila", "value": "tequila"},
-	{"name": "Tonic Water", "value": "tonic"},
-	{"name": "Coke", "value": "coke"},
-	{"name": "Orange Juice", "value": "oj"},
-	{"name": "Margarita Mix", "value": "mmix"}
+	{"name": "Green", "value": "green"},
+	{"name": "Yellow", "value": "yellow"},
+	{"name": "Red", "value": "red"},
+	{"name": "Blue", "value": "blue"}
 ]
