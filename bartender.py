@@ -12,8 +12,10 @@ from dotstar import Adafruit_DotStar
 from menu import MenuItem, Menu, Back, MenuContext, MenuDelegate
 from drinks import drink_list, drink_options
 
+# TODO: Might change from .BCM to .BOARD to make setup easier
 GPIO.setmode(GPIO.BCM)
 
+# I'm using the 1.3" display, but same resolution
 SCREEN_WIDTH = 128
 SCREEN_HEIGHT = 64
 
@@ -31,6 +33,7 @@ NEOPIXEL_DATA_PIN = 26
 NEOPIXEL_CLOCK_PIN = 6
 NEOPIXEL_BRIGHTNESS = 64
 
+# TODO: If I use higher flow pump for some mixes, will need to support multiple flow rates
 FLOW_RATE = 60.0/100.0
 
 class Bartender(MenuDelegate): 
