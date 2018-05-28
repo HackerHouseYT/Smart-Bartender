@@ -313,6 +313,7 @@ class Bartender(MenuDelegate):
     try:
       while True:
         time.sleep(0.1)
+	print ("loop")
 
     except KeyboardInterrupt:
       GPIO.cleanup()  # clean up GPIO on CTRL+C exit
