@@ -141,7 +141,7 @@ class Bartender(MenuDelegate):
     m.addOption(configuration_menu)
     # create a menu context
     self.menuContext = MenuContext(m, self)
-	print ("build menu")
+    print ("build menu")
 
   def filterDrinks(self, menu):
     """
@@ -160,7 +160,9 @@ class Bartender(MenuDelegate):
           i.visible = True
       elif (i.type == "menu"):
         self.filterDrinks(i)
-	print ("filter drinks")
+	
+
+     print ("filter drinks")
 
   def selectConfigurations(self, menu):
     """
@@ -175,7 +177,8 @@ class Bartender(MenuDelegate):
           i.name = i.attributes["name"]
       elif (i.type == "menu"):
         self.selectConfigurations(i)
-	print ("select configurations")
+	
+    print ("select configurations")
 
   def prepareForRender(self, menu):
     self.filterDrinks(menu)
