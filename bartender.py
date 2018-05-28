@@ -147,6 +147,7 @@ class Bartender(MenuDelegate):
     """
 		Removes any drinks that can't be handled by the pump configuration
 		"""
+    print ("filter drinks")
     for i in menu.options:
       if (i.type == "drink"):
         i.visible = False
@@ -162,12 +163,11 @@ class Bartender(MenuDelegate):
         self.filterDrinks(i)
 	
 
-     print ("filter drinks")
-
   def selectConfigurations(self, menu):
     """
 		Adds a selection star to the pump configuration option
 		"""
+    print ("select configurations")
     for i in menu.options:
       if (i.type == "pump_selection"):
         key = i.attributes["key"]
@@ -178,13 +178,12 @@ class Bartender(MenuDelegate):
       elif (i.type == "menu"):
         self.selectConfigurations(i)
 	
-    print ("select configurations")
 
   def prepareForRender(self, menu):
+    print ("prepare for render")
     self.filterDrinks(menu)
     self.selectConfigurations(menu)
     return True
-	print ("prepare for render")
 
   def menuItemClicked(self, menuItem):
     if (menuItem.type == "drink"):
@@ -233,21 +232,21 @@ class Bartender(MenuDelegate):
     # reenable interrupts
     # self.startInterrupts()
     self.running = False
-	print ("clean")
+    print ("clean")
 
   def displayMenuItem(self, menuItem):
     print (menuItem.name)
     self.led.clear_display()
     self.led.draw_text2(0, 20, menuItem.name, 2)
     self.led.display()
-	print ("display menu item")
+    print ("display menu item")
 
 
   def pour(self, pin, waitTime):
     GPIO.output(pin, GPIO.LOW)
     time.sleep(waitTime)
     GPIO.output(pin, GPIO.HIGH)
-	print ("pour")
+    print ("pour")
 
   def progressBar(self, waitTime):
     interval = waitTime / 100.0
@@ -256,7 +255,7 @@ class Bartender(MenuDelegate):
       self.updateProgressBar(x, y=35)
       self.led.display()
       time.sleep(interval)
-	print ("progress bar")
+    print ("progress bar")
 
   def makeDrink(self, drink, ingredients):
     # cancel any button presses while the drink is being made
@@ -296,7 +295,7 @@ class Bartender(MenuDelegate):
     # reenable interrupts
     # self.startInterrupts()
     self.running = False
-	print ("make drink")
+    print ("make drink")
 
   def left_btn(self, ctx):
     if not self.running:
@@ -318,7 +317,7 @@ class Bartender(MenuDelegate):
       for p in range(0, percent):
         p_loc = int(p / 100.0 * width)
         self.led.draw_pixel(x + p_loc, h + y)
-	print ("update progress bar")
+    print ("update progress bar")
 
   def run(self):
     self.startInterrupts()
