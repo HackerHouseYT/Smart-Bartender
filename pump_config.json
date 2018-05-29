@@ -8,15 +8,5 @@
 		"name": "Pump 2",
 		"pin": 27, 
 		"value": "blue"
-	},
-	"pump_3": {
-		"name": "Pump 3",
-		"pin": 22, 
-		"value": "green"
-	},
-	"pump_4": {
-		"name": "Pump 4",
-		"pin": 23, 
-		"value": "yellow"
 	}
 }
