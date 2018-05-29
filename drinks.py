@@ -4,7 +4,7 @@ drink_list = [
 		"name": "Blue & Red - 50ml",
 		"ingredients": {
 			"blue": 50,
-			"coke": 50
+			"red": 50
 		}
 	}, {
 		"name": "Green & Yellow - 50ml",
