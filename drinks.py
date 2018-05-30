@@ -42,5 +42,9 @@ drink_options = [
 	{"name": "Green", "value": "green"},
 	{"name": "Yellow", "value": "yellow"},
 	{"name": "Red", "value": "red"},
-	{"name": "Blue", "value": "blue"}
+	{"name": "Blue", "value": "blue"},
+	{"name": "Water", "value": "water"},
+	{"name": "Milk", "value": "milk"},
+	{"name": "Orange Juice", "value": "orange juice"},
+	{"name": "Cranberry Juice", "value": "cranberry juice"}
 ]
