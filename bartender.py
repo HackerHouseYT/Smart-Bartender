@@ -141,7 +141,7 @@ class Bartender(MenuDelegate):
     m.addOption(configuration_menu)
     # create a menu context
     self.menuContext = MenuContext(m, self)
-    print ("------------")
+    print ("----------------------")
 
   def filterDrinks(self, menu):
     """
@@ -234,7 +234,8 @@ class Bartender(MenuDelegate):
     print ("cleaned")
 
   def displayMenuItem(self, menuItem):
-    print (menuItem.name)
+    print ("-------------------")
+    print (":::::::  " + str(menuItem.name) + "  ::::::::::")
     self.led.clear_display()
     self.led.draw_text2(0, 20, menuItem.name, 2)
     self.led.display()
