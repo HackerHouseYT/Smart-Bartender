@@ -97,7 +97,7 @@ class Bartender(MenuDelegate):
     GPIO.add_event_detect(self.btn2Pin, GPIO.FALLING, callback=self.right_btn,
                           bouncetime=RIGHT_PIN_BOUNCE)
     var = input()
-    if (var == 'a')
+    if (var == "a")
 	self.left_btn
 
   def stopInterrupts(self):
