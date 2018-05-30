@@ -248,7 +248,7 @@ class Bartender(MenuDelegate):
     GPIO.output(pin, GPIO.HIGH)
     print ("pouring")
 	
-  def cancelPour(self)
+  def cancelPour(self):
     GPIO.cleanup()
     self.__init__()
 
