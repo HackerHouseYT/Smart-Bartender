@@ -1,6 +1,10 @@
 # Smart Bartender
 Fork of original Smart-Bartender from HackerShackOfficial to support testing and personal modifications.
 
+Main deviations from originial fork:
+* pump_config now supports up to 8 pumps, each of which contain their own flowrate and a flag for if they're loaded or not
+* bartender.py now also prints the screen value to console
+
 ## Prerequisites for the Raspberry Pi
 Make sure you can connect a screen and keyboard to your Raspberry Pi. I like to use VNC to connect to the Pi. I created a [tutorial](https://www.youtube.com/watch?v=2iVK8dn-6x4) about how to set that up on a Mac.
 
