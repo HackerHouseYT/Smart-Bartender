@@ -160,7 +160,6 @@ class Bartender(MenuDelegate):
               presentIng += 1
         if (presentIng == len(ingredients.keys())):
           i.visible = True
-	  print ("Availible Drinks: " + str(i.name))
       elif (i.type == "menu"):
         self.filterDrinks(i)
 	
@@ -332,6 +331,8 @@ class Bartender(MenuDelegate):
 	var = raw_input()
 	if var == "q":
 		self.menuContext.advance()
+	if var == "p"
+		self.menuContext.select()
 	
 
     except KeyboardInterrupt:
