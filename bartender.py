@@ -328,7 +328,7 @@ class Bartender(MenuDelegate):
       while True:
         time.sleep(0.1)
 	
-    var = input(" ")
+    var = input()
     if ('q' = str(var))
 	self.left_btn
     if ('p' = str(var))
