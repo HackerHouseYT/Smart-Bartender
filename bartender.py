@@ -141,13 +141,12 @@ class Bartender(MenuDelegate):
     m.addOption(configuration_menu)
     # create a menu context
     self.menuContext = MenuContext(m, self)
-    print ("build menu")
+    print ("------------")
 
   def filterDrinks(self, menu):
     """
 		Removes any drinks that can't be handled by the pump configuration
 		"""
-    print ("filter drinks")
     for i in menu.options:
       if (i.type == "drink"):
         i.visible = False
@@ -157,6 +156,7 @@ class Bartender(MenuDelegate):
           for p in self.pump_configuration.keys():
             if (ing == self.pump_configuration[p]["value"]):
               presentIng += 1
+	      print ("Unable to make drink " + str(i.name) + " - Removed.")
         if (presentIng == len(ingredients.keys())):
           i.visible = True
       elif (i.type == "menu"):
@@ -170,6 +170,7 @@ class Bartender(MenuDelegate):
 
     for i in menu.options:
       if (i.type == "pump_selection"):
+	print ("Found and Initialized " + str(i.name))
         key = i.attributes["key"]
         if (self.pump_configuration[key]["value"] == i.attributes["value"]):
           i.name = "%s %s" % (i.attributes["name"], "*")
@@ -177,7 +178,7 @@ class Bartender(MenuDelegate):
           i.name = i.attributes["name"]
       elif (i.type == "menu"):
         self.selectConfigurations(i)
-        print ("select configurations" + str(i.name))
+        print ("Creating Menu: " + str(i.name))
 	
 
   def prepareForRender(self, menu):
