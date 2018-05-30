@@ -328,6 +328,9 @@ class Bartender(MenuDelegate):
     try:
       while True:
         time.sleep(0.05)
+	var = input()
+	if (var == 'q'):
+		self.menuContext.advance()
 	
 
     except KeyboardInterrupt:
@@ -340,6 +343,3 @@ class Bartender(MenuDelegate):
 bartender = Bartender()
 bartender.buildMenu(drink_list, drink_options)
 bartender.run()
-var = input()
-if (var == 'q'):
-	bartender.left_btn(bartender)
