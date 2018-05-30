@@ -9,49 +9,49 @@
 	"pump_2": {
 		"name": "Pump 2",
 		"pin": 27, 
-		"value": "blue"
+		"value": "blue",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_3": {
 		"name": "Pump 3",
 		"pin": 22, 
-		"value": "green"
+		"value": "green",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_4": {
 		"name": "Pump 4",
 		"pin": 23, 
-		"value": "yellow"
+		"value": "yellow",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_5": {
 		"name": "Pump 5",
 		"pin": 24, 
-		"value": "water"
+		"value": "water",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_6": {
 		"name": "Pump 6",
 		"pin": 25, 
-		"value": "milk"
+		"value": "milk",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_7": {
 		"name": "Pump 7",
 		"pin": 21, 
-		"value": "orange juice"
+		"value": "orange juice",
 		"flowrate": 100,
 		"loaded?": false
 	},
 	"pump_8": {
 		"name": "Pump 8",
 		"pin": 20, 
-		"value": "cranberry juice"
+		"value": "cranberry juice",
 		"flowrate": 100,
 		"loaded?": false
 	}
