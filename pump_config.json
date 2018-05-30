@@ -11,7 +11,7 @@
 		"pin": 27, 
 		"value": "blue",
 		"flowrate": 100,
-		"loaded?": false
+		"loaded?": true
 	},
 	"pump_3": {
 		"name": "Pump 3",
