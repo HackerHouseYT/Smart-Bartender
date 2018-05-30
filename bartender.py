@@ -267,7 +267,7 @@ class Bartender(MenuDelegate):
     for ing in ingredients.keys():
       for pump in self.pump_configuration.keys():
         if ing == self.pump_configuration[pump]["value"]:
-	  custom_wait_time = self.pumpconfiguration[pump]["flowrate"]
+	  custom_wait_time = self.pump_configuration[pump]["flowrate"]
           waitTime = ingredients[ing] * custom_wait_time
           if (waitTime > maxTime):
             maxTime = waitTime
