@@ -336,7 +336,7 @@ class Bartender(MenuDelegate):
 	var = raw_input()
 	if var == "q":
 		self.menuContext.advance()
-	if var == "p":
+	if var == "w":
 		self.menuContext.select()
         if var == "a":
                 self.cancelPour()
