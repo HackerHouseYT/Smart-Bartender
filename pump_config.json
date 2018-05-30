@@ -18,7 +18,7 @@
 		"pin": 22, 
 		"value": "green",
 		"flowrate": 100,
-		"loaded?": 0
+		"loaded?": false
 	},
 	"pump_4": {
 		"name": "Pump 4",
