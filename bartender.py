@@ -250,6 +250,7 @@ class Bartender(MenuDelegate):
 	
   def cancelPour(self):
     GPIO.cleanup()
+    GPIO.setmode(GPIO.BCM)
     self.__init__()
 
   def progressBar(self, waitTime):
