@@ -342,4 +342,4 @@ bartender.buildMenu(drink_list, drink_options)
 bartender.run()
 var = input()
 if (var == 'q'):
-	bartender.left_btn
+	bartender.left_btn(bartender)
