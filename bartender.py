@@ -255,7 +255,7 @@ class Bartender(MenuDelegate):
       self.updateProgressBar(x, y=35)
       self.led.display()
       time.sleep(interval)
-    print ("progress bar")
+    print ("progress bar" + x)
 
   def makeDrink(self, drink, ingredients):
     # cancel any button presses while the drink is being made
