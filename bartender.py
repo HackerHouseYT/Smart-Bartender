@@ -167,7 +167,7 @@ class Bartender(MenuDelegate):
     """
 		Adds a selection star to the pump configuration option
 		"""
-    print ("select configurations")
+
     for i in menu.options:
       if (i.type == "pump_selection"):
         key = i.attributes["key"]
@@ -177,10 +177,10 @@ class Bartender(MenuDelegate):
           i.name = i.attributes["name"]
       elif (i.type == "menu"):
         self.selectConfigurations(i)
+        print ("select configurations" + str(i.name))
 	
 
   def prepareForRender(self, menu):
-    print ("prepare for render")
     self.filterDrinks(menu)
     self.selectConfigurations(menu)
     return True
@@ -232,21 +232,20 @@ class Bartender(MenuDelegate):
     # reenable interrupts
     # self.startInterrupts()
     self.running = False
-    print ("clean")
+    print ("cleaned")
 
   def displayMenuItem(self, menuItem):
     print (menuItem.name)
     self.led.clear_display()
     self.led.draw_text2(0, 20, menuItem.name, 2)
     self.led.display()
-    print ("display menu item")
 
 
   def pour(self, pin, waitTime):
     GPIO.output(pin, GPIO.LOW)
     time.sleep(waitTime)
     GPIO.output(pin, GPIO.HIGH)
-    print ("pour")
+    print ("pouring")
 
   def progressBar(self, waitTime):
     interval = waitTime / 100.0
@@ -255,7 +254,6 @@ class Bartender(MenuDelegate):
       self.updateProgressBar(x, y=35)
       self.led.display()
       time.sleep(interval)
-    print ("progress bar")
 
   def makeDrink(self, drink, ingredients):
     # cancel any button presses while the drink is being made
@@ -292,16 +290,19 @@ class Bartender(MenuDelegate):
     # sleep for a couple seconds to make sure the interrupts don't get triggered
     time.sleep(4);
 
+    print ("making drink")
     # reenable interrupts
     # self.startInterrupts()
     self.running = False
-    print ("make drink")
+
 
   def left_btn(self, ctx):
+    print ("left button")
     if not self.running:
       self.menuContext.advance()
 
   def right_btn(self, ctx):
+    print ("right button")
     if not self.running:
       self.menuContext.select()
 
@@ -317,14 +318,14 @@ class Bartender(MenuDelegate):
       for p in range(0, percent):
         p_loc = int(p / 100.0 * width)
         self.led.draw_pixel(x + p_loc, h + y)
-    print ("update progress bar" + str(percent))
+    print ("Drink progress: " + str(percent) + "%")
 
   def run(self):
     self.startInterrupts()
     # main loop
     try:
       while True:
-        time.sleep(0.3)
+        time.sleep(0.1)
 
     except KeyboardInterrupt:
       GPIO.cleanup()  # clean up GPIO on CTRL+C exit
