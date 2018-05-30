@@ -155,7 +155,7 @@ class Bartender(MenuDelegate):
         presentIng = 0
         for ing in ingredients.keys():
           for p in self.pump_configuration.keys():
-            if (ing == self.pump_configuration[p]["value"]):
+            if (ing == self.pump_configuration[p]["value"] and self.pump_configuration[p]["loaded?"] == true):
               presentIng += 1
         if (presentIng == len(ingredients.keys())):
           i.visible = True
