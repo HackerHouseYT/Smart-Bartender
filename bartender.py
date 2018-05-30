@@ -254,7 +254,7 @@ class Bartender(MenuDelegate):
     self.__init__()
 
   def progressBar(self, waitTime):
-    interval = waitTime / 110.0
+    interval = (waitTime / 100.0) - 0.05
     for x in range(1, 101):
       self.led.clear_display()
       self.updateProgressBar(x, y=35)
