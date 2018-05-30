@@ -3,6 +3,7 @@ import threading
 import time
 import traceback
 
+from tkinter import *
 import RPi.GPIO as GPIO
 import gaugette.gpio
 import gaugette.platform
@@ -333,7 +334,11 @@ class Bartender(MenuDelegate):
 
     traceback.print_exc()
 
-
+widget = Button(None, text='Keyboard Events)
+widget.pack()
+widget.bind('q', self.left_btn)
+widget.bind('p', self.right_btn)
+widget.mainloop()
 bartender = Bartender()
 bartender.buildMenu(drink_list, drink_options)
 bartender.run()
