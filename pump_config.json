@@ -3,14 +3,14 @@
 		"name": "Pump 1",
 		"pin": 17, 
 		"value": "red",
-		"flowrate": 60.0 / 100.0,
+		"flowrate": 0.6,
 		"loaded?": true
 	},
 	"pump_2": {
 		"name": "Pump 2",
 		"pin": 27, 
 		"value": "blue",
-		"flowrate": 60.0 / 100.0,
+		"flowrate": 0.6,
 		"loaded?": true
 	},
 	"pump_3": {
