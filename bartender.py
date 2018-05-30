@@ -317,7 +317,7 @@ class Bartender(MenuDelegate):
       for p in range(0, percent):
         p_loc = int(p / 100.0 * width)
         self.led.draw_pixel(x + p_loc, h + y)
-    print ("update progress bar")
+    print ("update progress bar" + percent)
 
   def run(self):
     self.startInterrupts()
