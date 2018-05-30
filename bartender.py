@@ -227,7 +227,7 @@ class Bartender(MenuDelegate):
     self.menuContext.showMenu()
 
     # sleep for a couple seconds to make sure the interrupts don't get triggered
-    time.sleep(2);
+    time.sleep(4);
 
     # reenable interrupts
     # self.startInterrupts()
@@ -290,7 +290,7 @@ class Bartender(MenuDelegate):
     self.menuContext.showMenu()
 
     # sleep for a couple seconds to make sure the interrupts don't get triggered
-    time.sleep(2);
+    time.sleep(4);
 
     # reenable interrupts
     # self.startInterrupts()
@@ -324,7 +324,7 @@ class Bartender(MenuDelegate):
     # main loop
     try:
       while True:
-        time.sleep(0.1)
+        time.sleep(0.3)
 
     except KeyboardInterrupt:
       GPIO.cleanup()  # clean up GPIO on CTRL+C exit
