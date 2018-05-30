@@ -19,6 +19,10 @@ drink_list = [
 			"yellow": 50,
 			"blue": 50,
 			"red": 50,
+			"water": 50,
+			"milk": 50,
+			"orange juice": 50,
+			"cranberry juice": 50
 		}
 	},
 	#test edge - no fluid at all
