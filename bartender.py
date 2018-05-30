@@ -284,11 +284,6 @@ class Bartender(MenuDelegate):
     for thread in pumpThreads:
       thread.start()
 
-    # check for cancel
-    var = raw_input("")
-    if var == "a":
-      self.cancelPour()
-
     # start the progress bar
     self.progressBar(maxTime)
 
@@ -331,6 +326,11 @@ class Bartender(MenuDelegate):
         p_loc = int(p / 100.0 * width)
         self.led.draw_pixel(x + p_loc, h + y)
     print ("Drink progress: " + str(percent) + "%")
+
+    # check for cancel
+    var = raw_input("")
+    if var == "a":
+      self.cancelPour()
 
   def run(self):
     self.startInterrupts()
