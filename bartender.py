@@ -34,8 +34,8 @@ NEOPIXEL_DATA_PIN = 26
 NEOPIXEL_CLOCK_PIN = 6
 NEOPIXEL_BRIGHTNESS = 64
 
-# TODO: If I use higher flow pump for some mixes, will need to support multiple flow rates
-FLOW_RATE = 60.0 / 100.0
+# DEPRICATED: Each pump in pump_config.json has its own flowrate, to support faster pumps
+# FLOW_RATE = 60.0 / 100.0
 
 
 class Bartender(MenuDelegate):
