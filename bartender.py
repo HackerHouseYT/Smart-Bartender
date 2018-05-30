@@ -227,7 +227,7 @@ class Bartender(MenuDelegate):
     self.menuContext.showMenu()
 
     # sleep for a couple seconds to make sure the interrupts don't get triggered
-    time.sleep(4);
+    time.sleep(0.5);
 
     # reenable interrupts
     # self.startInterrupts()
@@ -267,7 +267,8 @@ class Bartender(MenuDelegate):
     for ing in ingredients.keys():
       for pump in self.pump_configuration.keys():
         if ing == self.pump_configuration[pump]["value"]:
-          waitTime = ingredients[ing] * FLOW_RATE
+	  custom_wait_time = self.pumpconfiguration[pump]["flowrate"]
+          waitTime = ingredients[ing] * custom_wait_time
           if (waitTime > maxTime):
             maxTime = waitTime
           pump_t = threading.Thread(target=self.pour, args=(
@@ -289,7 +290,7 @@ class Bartender(MenuDelegate):
     self.menuContext.showMenu()
 
     # sleep for a couple seconds to make sure the interrupts don't get triggered
-    time.sleep(4);
+    time.sleep(2);
 
     print ("making drink")
     # reenable interrupts
