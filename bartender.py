@@ -284,6 +284,11 @@ class Bartender(MenuDelegate):
     for thread in pumpThreads:
       thread.start()
 
+    # check for cancel
+    var = raw_input("")
+    if var == "a":
+      self.cancelPour()
+
     # start the progress bar
     self.progressBar(maxTime)
 
@@ -338,8 +343,6 @@ class Bartender(MenuDelegate):
 		self.menuContext.advance()
 	if var == "p":
 		self.menuContext.select()
-	if var == "a":
-		self.cancelPour()
 	
 
     except KeyboardInterrupt:
