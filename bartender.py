@@ -247,6 +247,10 @@ class Bartender(MenuDelegate):
     time.sleep(waitTime)
     GPIO.output(pin, GPIO.HIGH)
     print ("pouring")
+	
+  def cancelPour(self)
+    GPIO.cleanup()
+    self.__init__()
 
   def progressBar(self, waitTime):
     interval = waitTime / 100.0
@@ -333,6 +337,8 @@ class Bartender(MenuDelegate):
 		self.menuContext.advance()
 	if var == "p":
 		self.menuContext.select()
+	if var == "a":
+		self.cancelPour()
 	
 
     except KeyboardInterrupt:
