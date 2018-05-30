@@ -255,7 +255,7 @@ class Bartender(MenuDelegate):
       self.updateProgressBar(x, y=35)
       self.led.display()
       time.sleep(interval)
-    print ("progress bar" + x)
+    print ("progress bar")
 
   def makeDrink(self, drink, ingredients):
     # cancel any button presses while the drink is being made
@@ -317,7 +317,7 @@ class Bartender(MenuDelegate):
       for p in range(0, percent):
         p_loc = int(p / 100.0 * width)
         self.led.draw_pixel(x + p_loc, h + y)
-    print ("update progress bar" + percent)
+    print ("update progress bar" + str(percent))
 
   def run(self):
     self.startInterrupts()
