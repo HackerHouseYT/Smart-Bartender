@@ -170,15 +170,14 @@ class Bartender(MenuDelegate):
 
     for i in menu.options:
       if (i.type == "pump_selection"):
-	print ("Found and Initialized " + str(i.name))
         key = i.attributes["key"]
         if (self.pump_configuration[key]["value"] == i.attributes["value"]):
           i.name = "%s %s" % (i.attributes["name"], "*")
         else:
           i.name = i.attributes["name"]
+	  print ("Found and Initialized " + str(i.name))
       elif (i.type == "menu"):
         self.selectConfigurations(i)
-        print ("Creating Menu: " + str(i.name))
 	
 
   def prepareForRender(self, menu):
