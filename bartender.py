@@ -2,6 +2,7 @@ import json
 import threading
 import time
 import traceback
+import sys
 
 
 import RPi.GPIO as GPIO
@@ -328,7 +329,9 @@ class Bartender(MenuDelegate):
     try:
       while True:
         time.sleep(0.05)
-
+	var = raw_input()
+	if var == "q":
+		self.menuContext.advance()
 	
 
     except KeyboardInterrupt:
