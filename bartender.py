@@ -328,11 +328,11 @@ class Bartender(MenuDelegate):
       while True:
         time.sleep(0.1)
 	
-    var = input()
-    if ('q' = str(var))
-	self.left_btn
-    if ('p' = str(var))
-	self.right_btn
+        var = input()
+        if ('q' = str(var))
+	    self.left_btn
+        if ('p' = str(var))
+	    self.right_btn
 
     except KeyboardInterrupt:
       GPIO.cleanup()  # clean up GPIO on CTRL+C exit
