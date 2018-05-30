@@ -329,9 +329,9 @@ class Bartender(MenuDelegate):
         time.sleep(0.1)
 	
         var = input()
-        if ('q' = str(var))
+        if ("q" == str(var))
 	    self.left_btn
-        if ('p' = str(var))
+        if ("p" == str(var))
 	    self.right_btn
 
     except KeyboardInterrupt:
