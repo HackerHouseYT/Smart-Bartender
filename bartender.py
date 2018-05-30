@@ -156,9 +156,9 @@ class Bartender(MenuDelegate):
           for p in self.pump_configuration.keys():
             if (ing == self.pump_configuration[p]["value"]):
               presentIng += 1
-	      print ("Unable to make drink " + str(i.name) + " - Removed.")
         if (presentIng == len(ingredients.keys())):
           i.visible = True
+	  print ("Availible Drinks: " + str(i.name))
       elif (i.type == "menu"):
         self.filterDrinks(i)
 	
@@ -175,7 +175,6 @@ class Bartender(MenuDelegate):
           i.name = "%s %s" % (i.attributes["name"], "*")
         else:
           i.name = i.attributes["name"]
-	  print ("Found and Initialized " + str(i.name))
       elif (i.type == "menu"):
         self.selectConfigurations(i)
 	
