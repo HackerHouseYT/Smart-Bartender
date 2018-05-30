@@ -328,9 +328,7 @@ class Bartender(MenuDelegate):
     try:
       while True:
         time.sleep(0.05)
-	var = input("talk")
-	if (str(var) == "q"):
-		self.menuContext.advance()
+
 	
 
     except KeyboardInterrupt:
