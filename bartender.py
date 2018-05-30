@@ -327,11 +327,6 @@ class Bartender(MenuDelegate):
         self.led.draw_pixel(x + p_loc, h + y)
     print ("Drink progress: " + str(percent) + "%")
 
-    # check for cancel
-    var = raw_input("")
-    if var == "a":
-      self.cancelPour()
-
   def run(self):
     self.startInterrupts()
     # main loop
@@ -343,6 +338,8 @@ class Bartender(MenuDelegate):
 		self.menuContext.advance()
 	if var == "p":
 		self.menuContext.select()
+        if var == "a":
+                self.cancelPour()
 	
 
     except KeyboardInterrupt:
