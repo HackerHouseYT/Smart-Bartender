@@ -334,7 +334,7 @@ class Bartender(MenuDelegate):
 
     traceback.print_exc()
 
-widget = Button(None, text='Keyboard Events)
+widget = Button(None, text='Keyboard Events')
 widget.pack()
 widget.bind('q', self.left_btn)
 widget.bind('p', self.right_btn)
