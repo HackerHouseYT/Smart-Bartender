@@ -4,7 +4,9 @@
   "description": "Forked from Smart-Bartender by HackerShackOfficial, this is an automated bartending system that adds support for additional pumps and flowrates, command line interfacing, and billing system integration.",
   "main": "bartender.py",
   "dependencies": {
-    "ar-drone": "^0.3.3"
+    "RPi.GPIO": "0.6.3",
+    "py-gaugette": "3.0",
+    "Adafruit_Dotstar": "1.0.0"
   },
   "devDependencies": {},
   "scripts": {
