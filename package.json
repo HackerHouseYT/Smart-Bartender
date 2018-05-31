@@ -1,0 +1,23 @@
+{
+  "name": "callahan2000",
+  "version": "0.0.1",
+  "description": "Forked from Smart-Bartender by HackerShackOfficial, this is an automated bartending system that adds support for additional pumps and flowrates, command line interfacing, and billing system integration.",
+  "main": "bartender.py",
+  "dependencies": {
+    "ar-drone": "^0.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycedewitt/Smart-Bartender.git"
+  },
+  "author": "TheROXY (and friends)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brycedewitt/Smart-Bartender/issues"
+  },
+  "homepage": "https://github.com/brycedewitt/Smart-Bartender#readme"
+}
