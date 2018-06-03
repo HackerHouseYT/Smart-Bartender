@@ -332,7 +332,9 @@ class Bartender(MenuDelegate):
 
 	def right_btn(self, ctx):
 		if not self.running:
+			self.stopInterrupts()
 			self.menuContext.select()
+			self.startInterrupts()
 
 	def updateProgressBar(self, percent, x=15, y=15):
 		height = 10
