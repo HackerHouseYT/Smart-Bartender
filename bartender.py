@@ -71,7 +71,7 @@ class Bartender(MenuDelegate):
     self.led.clear_display()
     self.led.display()
     self.led.invert_display()
-    time.sleep(0.5)
+    time.sleep(1)
     self.led.normal_display()
     time.sleep(0.5)
 
@@ -240,7 +240,6 @@ class Bartender(MenuDelegate):
     self.led.clear_display()
     self.led.draw_text2(0, 20, menuItem.name, 2)
     self.led.display()
-    self.led.startscrollright(0x00, 0x0F)
 
 
   def pour(self, pin, waitTime):
