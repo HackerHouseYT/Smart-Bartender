@@ -240,7 +240,7 @@ class Bartender(MenuDelegate):
     self.led.clear_display()
     self.led.draw_text2(0, 5, "+++| Callahan2000 |+++", 1)
     self.led.draw_text2(0, 15, "#########################", 1)
-    self.led.draw_text2(0, 40, menuItem.name, 1.5)
+    self.led.draw_text2(0, 40, menuItem.name, 2)
     self.led.display()
 
 
