@@ -240,6 +240,7 @@ class Bartender(MenuDelegate):
     self.led.clear_display()
     self.led.draw_text2(0, 20, menuItem.name, 2)
     self.led.display()
+    self.led.scrollright(0x00, 0x0F)
 
 
   def pour(self, pin, waitTime):
