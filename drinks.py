@@ -1,7 +1,7 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Blue & Red \n- 50ml",
+		"name": "Blue & Red - 50ml",
 		"ingredients": {
 			"blue": 50,
 			"red": 50
