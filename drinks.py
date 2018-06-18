@@ -6,6 +6,12 @@ drink_list = [
 			"blue": 50,
 			"red": 50
 		}
+	},{
+		"name": "Orange and Indigo - 50ml",
+		"ingredients": {
+			"orange": 50,
+			"indigo": 50
+		}
 	}, {
 		"name": "Green & Yellow - 50ml",
 		"ingredients": {
@@ -43,8 +49,8 @@ drink_options = [
 	{"name": "Yellow", "value": "yellow"},
 	{"name": "Red", "value": "red"},
 	{"name": "Blue", "value": "blue"},
-	{"name": "Water", "value": "water"},
-	{"name": "Milk", "value": "milk"},
+	{"name": "Orange", "value": "orange"},
+	{"name": "Indigo", "value": "indigo"},
 	{"name": "Orange Juice", "value": "orange juice"},
 	{"name": "Cranberry Juice", "value": "cranberry juice"}
 ]
