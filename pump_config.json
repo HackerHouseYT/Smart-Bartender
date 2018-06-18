@@ -3,7 +3,7 @@
 		"name": "Pump 1",
 		"pin": 17, 
 		"value": "red",
-		"flowrate": 0.7272,
+		"flowrate": 6.67,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -11,7 +11,7 @@
 		"name": "Pump 2",
 		"pin": 27, 
 		"value": "blue",
-		"flowrate": 0.7272,
+		"flowrate": 6.67,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -19,7 +19,7 @@
 		"name": "Pump 3",
 		"pin": 22, 
 		"value": "green",
-		"flowrate": 0.7272,
+		"flowrate": 6.67,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -27,7 +27,7 @@
 		"name": "Pump 4",
 		"pin": 23, 
 		"value": "yellow",
-		"flowrate": 0.7272,
+		"flowrate": 6.67,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -35,7 +35,7 @@
 		"name": "Pump 5",
 		"pin": 24, 
 		"value": "orange",
-		"flowrate": 6.67,
+		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -43,7 +43,7 @@
 		"name": "Pump 6",
 		"pin": 25, 
 		"value": "indigo",
-		"flowrate": 6.67,
+		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -51,7 +51,7 @@
 		"name": "Pump 7",
 		"pin": 21, 
 		"value": "violet",
-		"flowrate": 6.67,
+		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -59,7 +59,7 @@
 		"name": "Pump 8",
 		"pin": 20, 
 		"value": "pink",
-		"flowrate": 6.67,
+		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
 	}
