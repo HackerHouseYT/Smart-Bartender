@@ -238,7 +238,7 @@ class Bartender(MenuDelegate):
     print ("-------------------")
     print (":::::::  " + str(menuItem.name) + "  ::::::::::")
     self.led.clear_display()
-    self.led.draw_text2(0, 5, "++++  Rush Beta  ++++", 1)
+    self.led.draw_text2(0, 5, "+++  Callahan2000  +++", 1)
     self.led.draw_text2(0, 15, "#########################", 1)
     self.led.draw_text2(0, 40, menuItem.name, 2)
     self.led.display()
