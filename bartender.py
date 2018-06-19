@@ -269,6 +269,7 @@ class Bartender(MenuDelegate):
     # cancel any button presses while the drink is being made
     # self.stopInterrupts()
     self.running = True
+    self.startInterrupts()
 
     # Parse the drink ingredients and spawn threads for pumps
     maxTime = 0
