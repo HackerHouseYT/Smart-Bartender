@@ -1,25 +1,25 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Blue & Red - 50ml",
+		"name": "Mojito",
 		"ingredients": {
 			"blue": 50,
 			"red": 50
 		}
 	},{
-		"name": "Orange and Indigo - 50ml",
+		"name": "Manhattan",
 		"ingredients": {
 			"orange": 50,
 			"indigo": 50
 		}
 	}, {
-		"name": "Green & Yellow - 50ml",
+		"name": "Martini",
 		"ingredients": {
 			"green": 50,
 			"yellow": 50
 		}
 	}, {
-		"name": "All - 50ml",
+		"name": "Rush Beta",
 		"ingredients": {
 			"green": 50,
 			"yellow": 50,
