@@ -6,7 +6,7 @@ drink_list = [
 			"orange": 50
 		}
 	},{
-		"name": "Manhattan",
+		"name": "Gin/EmergenC",
 		"ingredients": {
 			"orange": 200,
 			"indigo": 25
