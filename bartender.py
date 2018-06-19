@@ -309,6 +309,11 @@ class Bartender(MenuDelegate):
 
   def left_btn(self, ctx):
     print ("left button")
+    if self.running:\
+      GPIO.cleanup()
+      newbartender = Bartender()
+      newbartender.buildMenu(drink_list, drink_options)
+      newbartender.run()
     if not self.running:
       self.menuContext.advance()
 
