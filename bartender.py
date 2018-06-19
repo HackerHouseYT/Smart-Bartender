@@ -310,15 +310,14 @@ class Bartender(MenuDelegate):
   def left_btn(self, ctx):
     print ("left button")
     if self.running:
-      GPIO.cleanup()
-      newbartender = Bartender()
-      newbartender.buildMenu(drink_list, drink_options)
-      newbartender.run()
+      thread.interrupt_main()
     if not self.running:
       self.menuContext.advance()
 
   def right_btn(self, ctx):
     print ("right button")
+    if self.running:
+      thread.interrupt_main()
     if not self.running:
       self.stopInterrupts()
       self.menuContext.select()
