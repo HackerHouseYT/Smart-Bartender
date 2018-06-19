@@ -9,8 +9,8 @@ drink_list = [
 	},{
 		"name": "Manhattan",
 		"ingredients": {
-			"orange": 50,
-			"indigo": 50
+			"violet": 50,
+			"pink": 50
 		}
 	}, {
 		"name": "Martini",
