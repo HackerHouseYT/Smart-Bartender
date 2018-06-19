@@ -310,7 +310,7 @@ class Bartender(MenuDelegate):
   def left_btn(self, ctx):
     print ("left button")
     if self.running:
-      thread.interrupt_main()
+      KeyboardInterrupt
     if not self.running:
       self.menuContext.advance()
 
