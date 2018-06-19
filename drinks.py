@@ -3,8 +3,7 @@ drink_list = [
 	{
 		"name": "Mojito",
 		"ingredients": {
-			"blue": 50,
-			"red": 50
+			"blue": 50
 		}
 	},{
 		"name": "Manhattan",
