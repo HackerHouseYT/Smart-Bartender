@@ -349,6 +349,14 @@ class Bartender(MenuDelegate):
 	
 
     except KeyboardInterrupt:
+      GPIO.output(17,0)
+      GPIO.output(27,0)
+      GPIO.output(22,0)
+      GPIO.output(23,0)
+      GPIO.output(24,0)
+      GPIO.output(25,0)
+      GPIO.output(21,0)
+      GPIO.output(20,0)
       GPIO.cleanup()  # clean up GPIO on CTRL+C exit
     GPIO.cleanup()  # clean up GPIO on normal exit
 
