@@ -4,7 +4,7 @@ drink_list = [
 		"name": "CaptPhillips",
 		"ingredients": {
 			"rum": 66,
-			"violet": 200
+			"coke": 200
 		},
 	}, {
 		"name": "Rush Beta",
