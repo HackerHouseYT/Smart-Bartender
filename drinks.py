@@ -39,7 +39,7 @@ drink_list = [
 		"ingredients": {
 			"tequila": 45,
 			"jager": 5,
-			"tonic": 5
+			"tonicwater": 5
 		}
 	}, {
 		"name": "ShotTequila",
