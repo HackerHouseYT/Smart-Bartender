@@ -1,72 +1,46 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Tisco",
+		"name": "CaptPhillips",
 		"ingredients": {
-			"pink": 44,
-			"violet": 44,
-			"indigo": 22,
-			"green": 150
-		},
-	},{
-		"name": "red",
-		"ingredients": {
-			"red": 200
-		}
-	},{
-		"name": "orange",
-		"ingredients": {
-			"orange": 200
-		}
-	},{
-		"name": "green",
-		"ingredients": {
-			"green": 200
-		}
-	},{
-		"name": "indigo",
-		"ingredients": {
-			"indigo": 25
-		}
-	},{
-		"name": "pink",
-		"ingredients": {
-			"pink": 200
-		}
-	},{
-		"name": "violet",
-		"ingredients": {
+			"rum": 66,
 			"violet": 200
-		}
-	}, {
-		"name": "blue",
-		"ingredients": {
-			"blue": 50
-		}
+		},
 	}, {
 		"name": "Rush Beta",
 		"ingredients": {
-			"green": 50,
-			"yellow": 50,
-			"blue": 50,
-			"red": 50,
-			"orange": 50,
-			"indigo": 50,
-			"violet": 50,
-			"pink": 50
+			"gin": 20,
+			"tequila": 20,
+			"vodka": 20,
+			"redbull": 55,
+			"coke": 100,
+			"tonicwater": 180
 		}
-	},
-	#test edge - no fluid at all
-	{
-		"name": "All - 0ml",
+	}, {
+		"name": "MyNewHaircut",
 		"ingredients": {
-			"green": 0,
-			"yellow": 0,
-			"blue": 0,
-			"red": 0,
+			"jager": 44,
+			"redbull": 245
 		}
-	},
-	
+	}, {
+		"name": "SenileSurprise",
+		"ingredients": {
+			"gin": 88,
+			"tonic": 132
+		}
+	}, {
+		"name": "SratPack",
+		"ingredients": {
+			"vodka": 60,
+			"tonic": 260
+		}
+	}, {
+		"name": "NocheDelMuerte"
+		"ingredients": {
+			"tequila": 45,
+			"jager": 5,
+			"tonic": 5
+		}	
 ]
 
 drink_options = [
@@ -74,7 +48,7 @@ drink_options = [
 	{"name": "Coke", "value": "coke"},
 	{"name": "Tequila", "value": "tequila"},
 	{"name": "Rum", "value": "rum,"},
-	{"name": "Simple Syrup", "value": "simplesyrup"},
+	{"name": "Tonic Water", "value": "tonicwater"},
 	{"name": "Red Bull", "value": "redbull"},
 	{"name": "Jager", "value": "jager"},
 	{"name": "Gin", "value": "gin"}
