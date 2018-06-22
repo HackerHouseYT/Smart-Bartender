@@ -26,7 +26,7 @@
 	"pump_4": {
 		"name": "Pump 4",
 		"pin": 23, 
-		"value": "rum",
+		"value": "tonicwater",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -34,7 +34,7 @@
 	"pump_5": {
 		"name": "Pump 5",
 		"pin": 24, 
-		"value": "tonicwater",
+		"value": "rum",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
