@@ -3,7 +3,7 @@ drink_list = [
 	{
 		"name": "Mojito",
 		"ingredients": {
-			"red": 500
+			"yellow": 500
 		}
 	},{
 		"name": "Gin/EmergenC",
