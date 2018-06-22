@@ -1,21 +1,44 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Mojito",
+		"name": "yellow",
 		"ingredients": {
 			"yellow": 500
+		},
+	},{
+		"name": "red",
+		"ingredients": {
+			"red": 200
 		}
 	},{
-		"name": "Gin/EmergenC",
+		"name": "orange",
 		"ingredients": {
-			"orange": 200,
+			"orange": 200
+		}
+	},{
+		"name": "green",
+		"ingredients": {
+			"green": 200
+		}
+	},{
+		"name": "indigo",
+		"ingredients": {
 			"indigo": 25
 		}
-	}, {
-		"name": "Martini",
+	},{
+		"name": "pink",
 		"ingredients": {
-			"green": 50,
-			"yellow": 50
+			"pink": 200
+		}
+	},{
+		"name": "violet",
+		"ingredients": {
+			"violet": 200
+		}
+	}, {
+		"name": "blue",
+		"ingredients": {
+			"blue": 50
 		}
 	}, {
 		"name": "Rush Beta",
@@ -50,6 +73,6 @@ drink_options = [
 	{"name": "Blue", "value": "blue"},
 	{"name": "Orange", "value": "orange"},
 	{"name": "Indigo", "value": "indigo"},
-	{"name": "Orange Juice", "value": "orange juice"},
-	{"name": "Cranberry Juice", "value": "cranberry juice"}
+	{"name": "Violet", "value": "violet"},
+	{"name": "Pink", "value": "pink"}
 ]
