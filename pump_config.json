@@ -2,7 +2,7 @@
 	"pump_1": {
 		"name": "Pump 1",
 		"pin": 17, 
-		"value": "red",
+		"value": "vodka",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -10,7 +10,7 @@
 	"pump_2": {
 		"name": "Pump 2",
 		"pin": 27, 
-		"value": "blue",
+		"value": "coke",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -18,7 +18,7 @@
 	"pump_3": {
 		"name": "Pump 3",
 		"pin": 22, 
-		"value": "green",
+		"value": "red bull",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -26,7 +26,7 @@
 	"pump_4": {
 		"name": "Pump 4",
 		"pin": 23, 
-		"value": "yellow",
+		"value": "rum",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -34,7 +34,7 @@
 	"pump_5": {
 		"name": "Pump 5",
 		"pin": 24, 
-		"value": "orange",
+		"value": "simple syrup",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
@@ -42,7 +42,7 @@
 	"pump_6": {
 		"name": "Pump 6",
 		"pin": 25, 
-		"value": "indigo",
+		"value": "jager",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
@@ -50,7 +50,7 @@
 	"pump_7": {
 		"name": "Pump 7",
 		"pin": 21, 
-		"value": "violet",
+		"value": "tequila",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
@@ -58,7 +58,7 @@
 	"pump_8": {
 		"name": "Pump 8",
 		"pin": 20, 
-		"value": "pink",
+		"value": "gin",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
