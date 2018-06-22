@@ -56,6 +56,7 @@ drink_list = [
 		"ingredients": {
 			"jager": 44
 		}
+	}
 ]
 
 drink_options = [
