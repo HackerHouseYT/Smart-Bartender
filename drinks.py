@@ -26,13 +26,13 @@ drink_list = [
 		"name": "SenileSurprise",
 		"ingredients": {
 			"gin": 88,
-			"tonic": 132
+			"tonicwater": 132
 		}
 	}, {
 		"name": "SratPack",
 		"ingredients": {
 			"vodka": 60,
-			"tonic": 260
+			"tonicwater": 260
 		}
 	}, {
 		"name": "NocheDelMuerte",
