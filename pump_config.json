@@ -34,7 +34,7 @@
 	"pump_5": {
 		"name": "Pump 5",
 		"pin": 24, 
-		"value": "simple syrup",
+		"value": "tonic water",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
