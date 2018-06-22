@@ -70,12 +70,12 @@ drink_list = [
 ]
 
 drink_options = [
-	{"name": "Green", "value": "green"},
-	{"name": "Yellow", "value": "yellow"},
-	{"name": "Red", "value": "red"},
-	{"name": "Blue", "value": "blue"},
-	{"name": "Orange", "value": "orange"},
-	{"name": "Indigo", "value": "indigo"},
-	{"name": "Violet", "value": "violet"},
-	{"name": "Pink", "value": "pink"}
+	{"name": "Vodka", "value": "vodka"},
+	{"name": "Coke", "value": "coke"},
+	{"name": "Tequila", "value": "tequila"},
+	{"name": "Rum", "value": "rum,"},
+	{"name": "Simple Syrup", "value": "simplesyrup"},
+	{"name": "Red Bull", "value": "redbull"},
+	{"name": "Jager", "value": "jager"},
+	{"name": "Gin", "value": "gin"}
 ]
