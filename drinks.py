@@ -35,12 +35,27 @@ drink_list = [
 			"tonic": 260
 		}
 	}, {
-		"name": "NocheDelMuerte"
+		"name": "NocheDelMuerte",
 		"ingredients": {
 			"tequila": 45,
 			"jager": 5,
 			"tonic": 5
-		}	
+		}
+	}, {
+		"name": "ShotTequila",
+		"ingredients": {
+			"tequila": 44
+		}
+	}, {
+		"name": "HighSchool",
+		"ingredients": {
+			"vodka": 44
+		}
+	}, {
+		"name" : "Jager",
+		"ingredients": {
+			"jager": 44
+		}
 ]
 
 drink_options = [
