@@ -1,9 +1,12 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "yellow",
+		"name": "Tisco",
 		"ingredients": {
-			"yellow": 500
+			"pink": 44,
+			"violet": 44,
+			"indigo": 22,
+			"yellow": 150
 		},
 	},{
 		"name": "red",
