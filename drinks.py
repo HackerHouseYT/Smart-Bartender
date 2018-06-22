@@ -63,7 +63,7 @@ drink_options = [
 	{"name": "Vodka", "value": "vodka"},
 	{"name": "Coke", "value": "coke"},
 	{"name": "Tequila", "value": "tequila"},
-	{"name": "Rum", "value": "rum,"},
+	{"name": "Rum", "value": "rum"},
 	{"name": "Tonic Water", "value": "tonicwater"},
 	{"name": "Red Bull", "value": "redbull"},
 	{"name": "Jager", "value": "jager"},
