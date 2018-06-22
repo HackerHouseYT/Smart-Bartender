@@ -29,7 +29,7 @@ drink_list = [
 			"tonicwater": 132
 		}
 	}, {
-		"name": "SratPack ΔΖ",
+		"name": "SratPack",
 		"ingredients": {
 			"vodka": 60,
 			"tonicwater": 260
