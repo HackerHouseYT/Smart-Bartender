@@ -18,7 +18,7 @@
 	"pump_3": {
 		"name": "Pump 3",
 		"pin": 22, 
-		"value": "red bull",
+		"value": "redbull",
 		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
@@ -34,7 +34,7 @@
 	"pump_5": {
 		"name": "Pump 5",
 		"pin": 24, 
-		"value": "tonic water",
+		"value": "tonicwater",
 		"flowrate": 0.7272,
 		"loaded?": true,
 		"remaining": 750
