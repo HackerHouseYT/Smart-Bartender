@@ -29,13 +29,13 @@ drink_list = [
 			"tonicwater": 132
 		}
 	}, {
-		"name": "SratPack",
+		"name": "SratPack ΔΖ",
 		"ingredients": {
 			"vodka": 60,
 			"tonicwater": 260
 		}
 	}, {
-		"name": "NocheDelMuerte",
+		"name": "LaVidaLoca",
 		"ingredients": {
 			"tequila": 45,
 			"jager": 5,
