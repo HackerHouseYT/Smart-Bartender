@@ -6,7 +6,7 @@ drink_list = [
 			"pink": 44,
 			"violet": 44,
 			"indigo": 22,
-			"yellow": 150
+			"green": 150
 		},
 	},{
 		"name": "red",
