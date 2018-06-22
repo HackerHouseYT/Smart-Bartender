@@ -3,7 +3,7 @@
 		"name": "Pump 1",
 		"pin": 17, 
 		"value": "red",
-		"flowrate": 8.34,
+		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -11,7 +11,7 @@
 		"name": "Pump 2",
 		"pin": 27, 
 		"value": "blue",
-		"flowrate": 8.34,
+		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -19,7 +19,7 @@
 		"name": "Pump 3",
 		"pin": 22, 
 		"value": "green",
-		"flowrate": 8.34,
+		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
 	},
@@ -27,7 +27,7 @@
 		"name": "Pump 4",
 		"pin": 23, 
 		"value": "yellow",
-		"flowrate": 8.34,
+		"flowrate": 0.12,
 		"loaded?": true,
 		"remaining": 750
 	},
