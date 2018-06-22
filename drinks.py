@@ -23,7 +23,7 @@ drink_list = [
 			"redbull": 245
 		}
 	}, {
-		"name": "SenileSurprise",
+		"name": "Camp Juul",
 		"ingredients": {
 			"gin": 88,
 			"tonicwater": 132
