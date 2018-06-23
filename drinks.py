@@ -7,6 +7,18 @@ drink_list = [
 			"coke": 200
 		},
 	}, {
+		"name": "Run All",
+		"ingredients": {
+			"gin": 200,
+			"tequila": 200,
+			"vodka": 200,
+			"redbull": 200,
+			"coke": 200,
+			"tonicwater": 200,
+			"jager": 200,
+			"rum": 200
+		}
+	}, {
 		"name": "Rush Beta",
 		"ingredients": {
 			"gin": 20,
