@@ -1,12 +1,14 @@
-# Smart Bartender
-Why spend lots of money going out for drinks when you can have your own smart personal bartender at your service right in your home?! This bartender is built from a Raspberry Pi 3 and some common DIY electronics.
+# Callahan2000
+Fork of original Smart-Bartender from HackerShackOfficial to support testing and personal modifications.
 
-## Prerequisites for the Raspberry Pi
-Make sure you can connect a screen and keyboard to your Raspberry Pi. I like to use VNC to connect to the Pi. I created a [tutorial](https://www.youtube.com/watch?v=2iVK8dn-6x4) about how to set that up on a Mac.
+Main differences from HackerShack's:
+* pump_config now supports up to 8 pumps, each of which contain their own flowrate and a flag for if they're loaded or not
+* bartender.py now also prints the screen value to console, as well as supports control of left and right buttons from a terminal window ("q" for next button, "w" for select button)
 
-Make sure the following are installed:
-* Python 2.7 (should already be installed on most Raspberry Pi)
-* [pip](https://www.raspberrypi.org/documentation/linux/software/python.md)
+Future plans:
+* add billing system based on mag stripe input
+* stability improvements
+
 
 ### Enable SPI
 You'll need to enable SPI for the OLED screen to work properly. Typing the following command in the terminal will bring you to a configuration menu.
