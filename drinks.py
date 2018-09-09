@@ -6,9 +6,9 @@ drink_list = [
 			"rum": 10,
 			"coke": 10,
 			"tequila": 10,
-			"gin":10,
-			"tonic water":10,
-			"jager":10
+			"gin": 10,
+			"tonicwater": 10,
+			"jager": 10
 		},
 		
 	}
