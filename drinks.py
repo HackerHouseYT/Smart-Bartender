@@ -3,9 +3,14 @@ drink_list = [
 	{
 		"name": "Abbie",
 		"ingredients": {
-			"rum": 55,
-			"coke": 200
+			"rum": 10,
+			"coke": 10,
+			"tequila": 10,
+			"gin":10,
+			"tonic water":10,
+			"jager":10
 		},
+		
 	}
 ]
 
