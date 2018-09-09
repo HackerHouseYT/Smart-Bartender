@@ -1,14 +1,16 @@
 # drinks.py
 drink_list = [
 	{
-		"name": "Abbie",
+		"name": "RunAll",
 		"ingredients": {
 			"rum": 10,
 			"coke": 10,
 			"tequila": 10,
 			"gin": 10,
 			"tonicwater": 10,
-			"jager": 10
+			"jager": 10,
+			"redbull": 10,
+			"vodka": 10
 		},
 		
 	}
