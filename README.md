@@ -1,8 +1,4 @@
-# Smart Bartender
-Why spend lots of money going out for drinks when you can have your own smart personal bartender at your service right in your home?! This bartender is built from a Raspberry Pi 3 and some common DIY electronics.
-
-## Prerequisites for the Raspberry Pi
-Make sure you can connect a screen and keyboard to your Raspberry Pi. I like to use VNC to connect to the Pi. I created a [tutorial](https://www.youtube.com/watch?v=2iVK8dn-6x4) about how to set that up on a Mac.
+# Smart Bartender with Adafruit SSD1306
 
 Make sure the following are installed:
 * Python 2.7 (should already be installed on most Raspberry Pi)
@@ -23,7 +19,7 @@ See this [article](https://www.raspberrypi.org/documentation/hardware/raspberryp
 Make sure i2c is also configured properly. Type
 
 ```
-sudo vim /etc/modules
+sudo nano /etc/modules
 ```
 
 in the terminal
@@ -38,23 +34,24 @@ i2c-dev
 press `esc` then `ZZ` to save and exit.
 
 ## OLED Setup
-The Raspberry Pi Guy has a nice script to setup the OLED screen on your raspberry pi. Download the following repository on your Pi:
 
-https://github.com/the-raspberry-pi-guy/OLED
-
-then navigate to the folder with the terminal
+You need to install the Adafruit Python SSD1306 library with
 
 ```
-cd ~/path/to/directory
+sudo python -m pip install --upgrade pip setuptools wheel
+sudo pip install Adafruit-SSD1306
 ```
 
-and run the installation script
+Or alternatively:
 
 ```
-sh OLEDinstall.sh
+sudo python -m pip install --upgrade pip setuptools wheel
+git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
+cd Adafruit_Python_SSD1306
+sudo python setup.py install
 ```
 
-There is also a [guide](https://learn.adafruit.com/adafruit-oled-displays-for-raspberry-pi/setting-up) on the Adafruit website if you get stuck.
+There is also a [guide](https://learn.adafruit.com/ssd1306-oled-displays-with-raspberry-pi-and-beaglebone-black/usage) on the Adafruit website if you get stuck.
 
 ## Running the Code
 
@@ -135,7 +132,7 @@ from the repository folder. Copy this to your clipboard.
 Next, type
 
 ```
-sudo vim /etc/rc.local
+sudo nano /etc/rc.local
 ```
 
 to open the rc.local file. Next, press `i` to edit. Before the last line, add the following two lines:
